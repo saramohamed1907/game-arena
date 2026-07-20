@@ -22,15 +22,17 @@
     }
 }
 
-/* @media (max-width:991px){
-
-    .service-card,
-    .service-img{
-        height:300px;
+@media (max-width: 991px) {
+    .navbar-collapse {
+        width: 100%;
+        overflow-x: hidden;
     }
 
-    .service-card h3{
-        font-size:1.5rem;
+    .navbar-collapse .navbar-nav {
+        width: 100%;
     }
 
-} */
+    .navbar-collapse .btn-nav {
+        margin-top: 10px;
+    }
+}
