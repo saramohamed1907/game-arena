@@ -1,0 +1,555 @@
+@font-face {
+    font-family: "Days One";
+    src: url("../fonts/Days_One/DaysOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Chakra Petch";
+    src: url("../fonts/Chakra_Petch/ChakraPetch-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Chakra Petch";
+    src: url("../fonts/Chakra_Petch/ChakraPetch-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.my-nav {
+    background-color: #0b0e13;
+    font-family: "Chakra Petch", sans-serif;
+}
+.my-nav .navbar-brand,
+h1 span {
+    color: #cbfe1c;
+}
+.my-nav .btn-nav {
+    background: #cbfe1c;
+    color: #0b0e13;
+    font-weight: 700;
+}
+.my-nav .nav-link {
+    color: white;
+    transition: 0.3s;
+}
+.my-nav .nav-link:hover {
+    color: #cbfe1c;
+}
+.my-nav .fa-regular {
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.my-nav .fa-regular:hover {
+    color: #cbfe1c;
+}
+.my-nav .nav-link.active {
+    color: #cbfe1c ;
+}
+
+#home {
+    min-height: 100vh;
+    padding: 100px 0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Chakra Petch", sans-serif;
+}
+#home h1 {
+    font-family: "Days One", sans-serif;
+}
+#home p {
+    color: oklch(0.872 0.01 258.338);
+}
+#home .btn-start {
+    background: #cbfe1c;
+    color: #0b0e13;
+    font-weight: 600;
+}
+#home .btn-start:hover {
+    background: #d8ff53;
+}
+#home .btn-watch {
+    color: #cbfe1c;
+    border: 1px solid #cbfe1c;
+}
+#home .btn-watch:hover {
+    background: #cbfe1c;
+    color: #0b0e13;
+}
+#home .hero-img {
+    border: 5px solid #cbfe1c;
+}
+#home .hero-badge {
+    position: absolute;
+    bottom: -25px;
+    left: -20px;
+    background-color: #0b0e13;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #364153;
+}
+#home .hero-badge i {
+    color: #cbfe1c;
+}
+#home .span-act {
+    color: #9ca3af;
+    font-size: 12px;
+}
+#home .money {
+    color: white;
+    font-size: 20px;
+}
+#OurGames,
+#WhatWeDo,
+#OurTeam,
+#ContactUs {
+    background-color: #0b0e13;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sec-title {
+    margin-bottom: 40px;
+}
+.sec-title h2 {
+    font-size: 48px;
+    color: rgb(241, 241, 241);
+    font-family: "Days One", sans-serif;
+    text-align: center;
+}
+.sec-title p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Chakra Petch", sans-serif;
+    color: oklch(0.707 0.022 261.325);
+}
+.sec-title .sp-1 {
+    color: #cbfe1c;
+    letter-spacing: 4px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.sec-title .sp-1::before {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #cbfe1c);
+}
+.sec-title .sp-1::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to left, transparent, #cbfe1c);
+}
+
+#OurGames .game-card {
+    cursor: pointer;
+}
+#OurGames .game-img {
+    transition: 0.5s;
+}
+.game-card:hover .game-img {
+    transform: scale(1.08);
+}
+#OurGames .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(203, 254, 28, 0.55),
+            rgba(203, 254, 28, 0.2),
+            rgba(203, 254, 28, 0.08));
+    opacity: 0;
+    transition: 0.4s;
+}
+#OurGames .game-tags,
+#OurGames .game-info {
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+#OurGames .game-tags {
+    top: 20px;
+    transform: translateY(-15px);
+}
+#OurGames .game-info {
+    bottom: 20px;
+    transform: translateY(15px);
+}
+#OurGames .game-card:hover {
+    border: 2px solid #cbfe1c;
+    box-shadow: 0 0 30px rgba(203, 254, 28, 0.35);
+}
+#OurGames .game-card:hover .overlay {
+    opacity: 1;
+}
+#OurGames .game-card:hover .game-tags,
+#OurGames .game-card:hover .game-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+#OurGames .game-tags span {
+    background: rgba(45, 58, 35, 0.95);
+    color: #fff;
+    font-size: 13px;
+}
+#OurGames .game-tags i {
+    color: #cbfe1c;
+}
+#OurGames .btn-outline-success {
+    border-color: #cbfe1c;
+    color: #cbfe1c;
+}
+#OurGames .btn-outline-success:hover {
+    background: #cbfe1c;
+    color: #111827;
+}
+#OurGames .btn-outline-secondary {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#OurGames .btn-change:hover {
+    color: #cbfe1c;
+    border: 2px solid #cbfe1c;
+}
+
+#WhatWeDo .sec-title .inter {
+    color: #cbfe1c;
+}
+#WhatWeDo .sec-title .sp-2 {
+    font-family: "Days One", sans-serif;
+}
+#WhatWeDo .sec-title .sp-3 {
+    font-family: "Chakra Petch", sans-serif;
+}
+#WhatWeDo .service-card,
+#WhatWeDo .service-img {
+    height: 300px;
+    border-radius: 20px;
+}
+#WhatWeDo .service-card {
+    background: #171717;
+    border: 1px solid #24324d;
+    transition: 0.4s ease;
+}
+#WhatWeDo .service-card::before,
+#WhatWeDo .service-card::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #cbfe1c;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 10;
+}
+#WhatWeDo .service-card::before {
+    top: 18px;
+    left: 18px;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+#WhatWeDo .service-card::after {
+    right: 18px;
+    bottom: 18px;
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}
+#WhatWeDo .service-card:hover::before,
+#WhatWeDo .service-card:hover::after {
+    opacity: 1;
+}
+#WhatWeDo .service-card:hover {
+    transform: translateY(-8px);
+}
+#WhatWeDo .icon-box {
+    width: 65px;
+    height: 65px;
+    background: #1f2b43;
+}
+#WhatWeDo .icon-box i {
+    font-size: 25px;
+    color: #cbfe1c;
+}
+#WhatWeDo .service-card:hover .icon-box {
+    background-color: #cbfe1c;
+}
+#WhatWeDo .service-card:hover .icon-box i {
+    color: #1f2b43;
+}
+#WhatWeDo .service-card:hover {
+    border: 2px solid #cbfe1c;
+}
+#WhatWeDo .service-card h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: "Days One", sans-serif;
+}
+#WhatWeDo .glow-line {
+    width: 50%;
+    height: 3px;
+    margin: 80px auto 0;
+    background: linear-gradient(to right,
+            transparent,
+            #c8ff00 12%,
+            #c8ff00 88%,
+            transparent);
+
+    box-shadow:
+        0 0 10px rgba(200, 255, 0, 0.9),
+        0 0 25px rgba(200, 255, 0, 0.5),
+        0 0 45px rgba(200, 255, 0, 0.25);
+}
+#WhatWeDo .scroll-row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#WhatWeDo .scroll-row .logo-box {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-inline: 10px;
+    border-radius: 5px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translatex(0);
+    }
+
+    100% {
+        transform: translatex(-30%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translatex(-30%);
+    }
+
+    100% {
+        transform: translatex(0);
+    }
+}
+
+.scroll-content {
+    animation: scroll-left 20s linear infinite;
+}
+
+.scroll-content.reverse {
+    animation: scroll-right 20s linear infinite;
+}
+
+.scroll-row .logos-glow {
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 100%;
+    background: radial-gradient(ellipse,
+            rgba(182, 236, 4, 0.868) 0%,
+            rgba(203, 254, 28, 0.22) 35%,
+            rgba(203, 254, 28, 0.08) 65%,
+            transparent 70%);
+}
+#OurTeam .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter .4s ease;
+}
+
+#OurTeam .OurTeam-card:hover .image-box img{
+    filter: grayscale(0);
+}
+.info h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: "Days One", sans-serif;
+}
+#OurTeam span,
+#OurTeam p {
+    font-family: "Chakra Petch", sans-serif;
+}
+#OurTeam .nickname {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #e0dede;
+}
+#OurTeam .sp-one {
+    font-size: 14px;
+    color: #e0dede;
+}
+#OurTeam .image-box:hover .sp-one,
+#OurTeam .image-box:hover .nickname {
+    color: #cbfe1c;
+}
+#OurTeam .text {
+    font-size: 12px;
+    color: rgb(196, 193, 193);
+}
+
+#ContactUs {
+    background-color: #0d111a;
+}
+#ContactUs .ContactUs-card {
+    background-color: #1e2939;
+}
+#ContactUs .ContactUs-card span {
+    background-color: #cbfe1c;
+    width: 65px;
+    height: 65px;
+}
+#ContactUs .ContactUs-card span i {
+    font-size: 25px;
+}
+#ContactUs .ContactUs-card h3 {
+    font-size: 20px;
+    color: rgb(241, 241, 241);
+    font-family: "Days One", sans-serif;
+}
+#ContactUs .ContactUs-card p {
+    color: oklch(0.707 0.022 261.325);
+    font-family: "Chakra Petch", sans-serif;
+}
+#ContactUs .Community-card {
+    background: linear-gradient(90deg,
+            #c9fe21 0%,
+            #b7fc31 18%,
+            #8ef24c 45%,
+            #60e85d 72%,
+            #2ee06f 100%);
+}
+#ContactUs .Community-card h3 {
+    font-size: 24px;
+    color: rgb(11, 14, 19);
+    font-family: "Days One", sans-serif;
+}
+#ContactUs .Community-card p {
+    color: rgb(11, 14, 19);
+    font-family: "Chakra Petch", sans-serif;
+}
+#ContactUs .social-icon {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#ContactUs .social-icon i {
+    color: #cbfe1c;
+    font-size: 20px;
+}
+#ContactUs .social-icon:hover {
+    transform: translateY(-5px);
+}
+#ContactUs .Contact-form {
+    background: #1e2939;
+}
+#ContactUs .Contact-form h3 {
+    font-family: "Days One", sans-serif;
+    font-size: 24px;
+}
+#ContactUs .form-control,
+#ContactUs .form-select {
+    background: #3b465b;
+    border: 1px solid #556176;
+    color: #fff;
+}
+#ContactUs .form-control::placeholder {
+    color: #9ca3af;
+}
+#ContactUs .form-control:focus,
+#ContactUs .form-select:focus {
+    background: #3b465b;
+    color: #fff;
+    border-color: #cbfe1c;
+    box-shadow: none;
+}
+#ContactUs textarea {
+    resize: none;
+}
+#ContactUs .form-check-input {
+    width: 24px;
+    height: 24px;
+    border: 2px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+}
+#ContactUs .form-check-input:checked {
+    background-color: #005cc8;
+    border-color: #cbfe1c;
+}
+#ContactUs .form-check-input:focus {
+    box-shadow: none;
+}
+#ContactUs .send-btn {
+    background: #cbfe1c;
+    color: #000;
+    border-radius: 12px;
+    font-size: 18px;
+}
+#ContactUs .send-btn:hover {
+    background: #b9ef00;
+}
+#ContactUs hr {
+    border-color: #465065;
+}
+#ContactUs .number {
+    color: #cbfe1c;
+    font-size: 40px;
+}
+
+#Footer {
+    background: #000000;
+}
+#Footer h3 {
+    font-size: 20px;
+    color: #fff;
+    font-family: "Chakra Petch", sans-serif;
+}
+#Footer .game,
+#Footer .fa-gamepad {
+    color: #cbfe1c;
+}
+#Footer p,
+#Footer a {
+    color: #8d93a5;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: "Chakra Petch", sans-serif;
+}
+#Footer ul {
+    margin: 0;
+    padding: 0;
+}
+#Footer li {
+    list-style: none;
+}
+#Footer a:hover {
+    color: #cbfe1c;
+}
+.social-links i {
+    font-size: 24px;
+}
+#Footer hr {
+    border-color: #c9ced7;
+}
+#Footer .d-flex:last-child p {
+    color: #8d93a5;
+}
+*::selection {
+    background-color: #cbfe1c;
+    color: #000;
+}
